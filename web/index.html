@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Interview Assessment Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="resource/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="resource/css/angular-material.min.css">
+        <link rel="stylesheet" type="text/css" href="resource/css/fontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="resource/css/dataTable/datatables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="resource/css/dataTable/jqueryui.min.css"/>
+        <link rel="stylesheet" type="text/css" href="resource/css/dataTable/jquery-ui.css"/>
+        <link rel="stylesheet" type="text/css" href="resource/css/custom.css"/>
+    </head>        
+    <body>
+        <div class="wrapper" style="" >
+            
+         <!--....................................................................................................................................................-->            
+<!--header--> 
+                <div>  
+                <nav>
+                    <div class="nav-wrapper" style="background-color: #fff;color:#0d47a1 ">
+                        <a href="#" class="brand-logo right"><img src="resource/images/logo.jpg" style='width:100%;height:100%'></a>
+                    </div>
+                </nav> 
+            </div>   
+<!--end of header--> 
+<!--....................................................................................................................................................-->   
+<!--sub header--> 
+            <div class="row ">  
+                <div class="col s12">
+                    <div class="" align="center" style="background-color: #fff;margin-top: 2% ">
+                        <h5 style="font-weight: bold">  Interview Assessment Form </h5>
+                        <h6 style="font-weight: bold">  (Up to S12) </h6>
+                    </div>
+                </div>
+            </div>  
+
+<!--end of sub header--> 
+<!--....................................................................................................................................................--> 
+<!--<information form>-->
+            <div class="row container rcorners2">
+                <div class="col s12">
+                    <div class="row ">
+                        <div class="input-field col s6">
+                            <input id="Name" type="text" class="validate">
+                            <label for="Name">Name of Candidate</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="Source" type="text" class="validate">
+                            <label for="Source">Source</label>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="input-field col s6">
+                            <input id="Position" type="text" class="validate">
+                            <label for="Position">Position Applied TO</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="Location" type="text" class="validate">
+                            <label for="Location">Location</label>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="input-field col s4">
+                            <input id="Company" type="text" class="validate">
+                            <label for="Company">Company</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="Department" type="text" class="validate">
+                            <label for="Department">Department</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">PI 1</option>
+                                <option value="2">PI 2</option>
+                                <option value="3">PI 3</option>
+                                <option value="4">HR</option>
+                            </select>
+                            <label>Personal Interview</label>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="input-field col s1">
+                         <label>Rating Scale: </label>
+                        </div>
+                        <div class="input-field col s3">
+                            <input name="group1" type="radio" id="VeryGood" value="VeryGood" />
+                            <label for="VeryGood" id="VeryGood1">VG: Very Good</label>
+                        </div>
+                        <div class="input-field col s3">
+                            <input name="group1" type="radio" id="test1" value="test1" />
+                            <label for="test1" id="test11">MC: Meets Criteria</label>
+                        </div>
+                        <div class="input-field col s5">
+                            <input name="group1" type="radio" id="test2" value="test2" />
+                            <label for="test2" id="test21">DNMC: Does Not Meet Criteria</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--<end of information form>-->
+<!--....................................................................................................................................................--> 
+            <div class="row container">
+                <table id="example" class="table table-condensed" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;">Criteria</th>
+                            <th style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">Comments (Be specific; Support your rating)</th>
+                            <th style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td width="40%"   style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;">
+                                <span style="font-weight: bold">Experience</span><br>
+                                <span>Describe candidate's work experience, exposure job knowledge, learnings, technology awareness and duration in his current job/role</span>
+                            </td>
+                            <td width="50%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Comment1" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                            <td width="10%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Rating1" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40%"  style="height:100px;border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;">
+                                <span style="font-weight: bold">Qualification with year of passing</span>
+                            </td>
+                            <td width="50%"  style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Comment2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                            <td width="10%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Rating2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;">
+                                <span style="font-weight: bold">Current Role</span><br>
+                                <span>Describe candidate's daily activities, target, territory/ span, reporting structure, etc.</span>
+                            </td>
+                            <td width="50%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Comment2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                            <td width="10%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Rating2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;">
+                                <span style="font-weight: bold">Customer Service Skills</span><br>
+                                <span>Did the candidate demonstrate knowledge and skills to create a positive customer experience? (Like listening, engaging, respect, influencing)</span>
+                            </td>
+                            <td width="50%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Comment2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                            <td width="10%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Rating2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;">
+                                <span style="font-weight: bold">Interpersonal Skills</span><br>
+                                <span>Did the candidate demonstrate relevant behavioural skills required for this role including team work?</span>
+                            </td>
+                            <td width="50%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Comment2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                            <td width="10%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Rating2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;">
+                                <span style="font-weight: bold">Communication Skills</span><br>
+                                <span>How do you rate the candidate on communicational skills including writing, email,etiquette, etc.?</span>
+                            </td>
+                            <td width="50%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Comment2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                            <td width="10%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Rating2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;">
+                                <span style="font-weight: bold">Career highlights/Achievements</span>
+                            </td>
+                            <td width="50%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Comment2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                            <td width="10%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Rating2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;">
+                                <span style="font-weight: bold">Strength/ Weakness</span><br>
+                                <span>With respect to the role and behavioural / personality traits</span>
+                            </td>
+                            <td width="50%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Comment2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                            <td width="10%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Rating2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;">
+                                <span style="font-weight: bold">Overall Impression</span><br>
+                                <span>Provide final comments including candidate's enthusiasm, energy, passion & positivity</span>
+                            </td>
+                            <td width="50%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Comment2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                            <td width="10%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;">
+                                <textarea id="Rating2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40%" style="border-right: 1px solid #dcdcdc;border-bottom: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;">
+                                <span style="font-weight: bold">Final Recommendation</span>
+                            </td>
+                            <td width="50%" style="border-top: 1px solid #dcdcdc;border-bottom: 1px solid #dcdcdc;">
+                                <input name="group3" type="radio" id="Selected" value="Selected" />
+                            <label for="Selected" id="Selected1">Selected</label>
+                            <input name="group3" type="radio" id="OnHold" value="OnHold" />
+                            <label for="OnHold" id="OnHold1">On Hold</label>
+                            <input name="group3" type="radio" id="Rejected" value="Rejected" />
+                            <label for="Rejected" id="Rejected1">Rejected</label>
+                            </td>
+                            <td width="10%" style="border-right: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;border-bottom: 1px solid #dcdcdc;">
+                                <textarea id="Rating2" class="materialize-textarea" style="border-bottom: 0px solid"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>     
+            </div>
+
+
+<!--....................................................................................................................................................-->
+            <div class="row container rcorners2">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="InterviewerName" type="text" class="validate">
+                            <label for="InterviewerName">Interviewer Name</label>
+                        </div>     
+                        <div class="input-field col s4">
+                            <input id="InterviewerSign" type="text" class="validate">
+                            <label for="InterviewerSign" >Interviewer Signature</label>
+                        </div>     
+                        <div class="input-field col s4">
+                           
+                            <input type="date" id='datepicker1' class="datepicker">
+                        </div>     
+                    </div>     
+                </div>
+            </div>
+<!--....................................................................................................................................................--> 
+<!--<print>-->
+            <div class="row" id="submitButton">
+                <div align="center">
+                    <button align="center" onclick="myFunction()">Print this page</button>
+                </div>
+            </div>
+                
+<!--<end of print>-->
+        </div>
+        <script>var myContextPath = "${pageContext.request.contextPath}"</script>
+        <script type="text/javascript" src="resource/JS/jquery.min.js"></script>
+        <script type="text/javascript" src="resource/JS/jquery-ui.js"></script>
+        <script type="text/javascript" src="resource/JS/materialize.min.js"></script>
+        <script type="text/javascript" src="resource/JS/datatables.min.js"></script>
+        
+        <script type="text/javascript">
+             $(document).ready(function() {
+                $('select').material_select();
+                
+            });
+            
+            $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+            function myFunction() {
+            var valueGroup1 =    $("input[name='group1']:checked").val();
+            var valueGroup3 =    $("input[name='group3']:checked").val();
+            if(valueGroup1!="undefined"){
+            $("#"+valueGroup1+"1").css("font-weight","bolder")
+            $("#"+valueGroup1+"1").css("font-size","12pt")
+            $("#"+valueGroup1+"1").css("color","red")
+            }
+            if(valueGroup3!="undefined"){
+            $("#"+valueGroup3+"1").css("font-weight","bolder")
+            $("#"+valueGroup3+"1").css("font-size","12pt")
+            $("#"+valueGroup3+"1").css("color","red")
+            }
+                window.print();
+            }
+            
+            
+            
+        </script>
+    </body>
+</html>
